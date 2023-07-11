@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { VscBellDot, VscChevronRight } from 'react-icons/vsc';
 
 function Button({ size, bg }) {
@@ -62,9 +62,9 @@ const btnSize = (size) => {
     case 'large':
       return `width : 200px; height: 50px;`;
     case 'medium':
-      return `width : 100px; height : 40px;`;
+      return `width : 130px; height : 45px;`;
     case 'small':
-      return `width : 80px; height : 35px;`;
+      return `width : 100px; height : 40px;`;
     default:
       return '';
   }

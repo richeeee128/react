@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NumericFormat } from 'react-number-format';
 import styled from 'styled-components';
-import { PrimaryBtn } from './Button';
+import { PrimaryBtn } from './button';
 
 function Input() {
   const [value, setValue] = useState('');
@@ -21,7 +21,7 @@ function Input() {
     e.preventDefault();
     if (name === '') {
       alert('이름과 가격 모두 입력해주세요.');
-      return;
+      return setValue('');
     }
     alert(`{name: ${name}, price: ${value} }`);
     // 초기화
@@ -52,7 +52,7 @@ function Input() {
             onValueChange={onChangeValueHandler}
           />
         </StInput>
-        <PrimaryBtn bg='primary' size='small' onClick={onClickHandler}>
+        <PrimaryBtn bg='pink' size='small' onClick={onClickHandler}>
           저장
         </PrimaryBtn>
       </form>
